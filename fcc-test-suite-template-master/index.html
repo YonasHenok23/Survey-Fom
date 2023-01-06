@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
     <form id="survey-form" action="">
-      <input type="text" name="name" id="name" required>
+      <label id="name-label" for="">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter your Name"
+        required />
+      <label id="email-label" for="">Email</label>
+      <input type="email" id="email" placeholder="Enter your Email" required />
+      <label id="number-label" for="">Age</label>
+      <input type="number" id="number" placeholder="Enter you Age" />
+      <select name="" id="dropdown">
+        <option value="Student">Student</option>
+        <option value="Full time job">Full time job</option>
+        <option value="full time learner">full time learner</option>
+      </select>
     </form>
 
     <!--
@@ -28,6 +45,6 @@
     - The freeCodeCamp Team
 
     -->
-    <script  src="js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
